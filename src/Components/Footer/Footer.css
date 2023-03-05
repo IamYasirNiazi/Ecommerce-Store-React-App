@@ -1,0 +1,76 @@
+footer{
+    margin-top: 1rem;
+    background-color: var(--primary-color);
+    padding: 1.8rem;
+    padding-top: 3rem;
+    padding-bottom: 1.5rem;
+    color: white;
+}
+
+footer .logo img{
+    background: white;
+    padding: .4rem;
+    object-fit: cover;
+    width: 14%;
+}
+
+footer .logo div span{
+    color: rgba(255, 255, 255, 0.795);
+}
+
+footer .top-categories ul li{
+    background: none;
+    color: rgba(255, 255, 255, 0.795);
+}
+
+footer .quick-links ul li{
+    background: none;
+    color: rgba(255, 255, 255, 0.795);
+}
+
+footer .contact ul li{
+    background: none;
+    color: rgba(255, 255, 255, 0.795);
+}
+
+footer .contact span i{
+    font-size: 1.2rem;
+}
+
+footer .contact span{
+    color: rgba(255, 255, 255, 0.795);
+}
+
+footer .contact span:nth-child(2),
+footer .footer-copyright{
+    font-size: .9rem;
+}
+
+footer .footer-text{
+    line-height: 1.7rem;
+}
+
+footer .footer-text,
+footer .footer-copyright{
+    color: rgba(255, 255, 255, 0.795);
+}
+
+@media only screen and (max-width: 768px){
+  
+    .logo{
+        margin-top: 0rem;
+
+    }
+
+    .top-categories{
+        margin-top: 1rem;
+    }
+
+    .quick-links{
+        margin-top: 1rem;
+    }
+
+    .contact{
+        margin-top: 1rem;
+    }
+}

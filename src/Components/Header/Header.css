@@ -1,0 +1,177 @@
+.header{
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+}
+
+.header .nav-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header .logo{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer;
+}
+
+.header .logo div h1{
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.header .logo div p{
+    font-size: .8rem;
+}
+
+.header .logo-icon{
+    width: 1.8rem;
+    height: 1.8rem;
+}
+
+.header .navigation .menu{
+    display: flex;
+    gap: 3rem;
+}
+
+.header .navigation span{
+    font-weight: 500;
+    color: var(--primary-color);
+}
+
+.header span.nav-active{
+    font-weight: 700;
+}
+
+.header .nav-icons{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    cursor: pointer;
+}
+
+.header .nav-icons .user-icon img{
+    width: 2rem;
+    height: 2rem;
+}
+
+.header .fav-icon, .cart-icon
+{
+    position: relative;
+    font-size: 1.3rem;
+}
+
+.header .badge{
+    position: absolute;
+    top: 0;
+    right: -.5rem;
+    background-color: var(--primary-color);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: .9rem;
+    height: .9rem;
+    font-size: .5rem;
+    font-weight: 500;
+}
+
+.header .mobile-nav{
+    display: none;
+    cursor: pointer;
+}
+
+.sticky-header{
+    width: 100%;
+    height: 4.95rem;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    background-color: white;
+    box-shadow: 3px 3px 8px -3px #ddd;
+}
+
+
+@media only screen and (max-width: 768px){
+    
+    .header{
+        width: 100%;
+        height: 4.2rem;
+    }
+
+    .header .mobile-nav{
+        display: block;
+    }
+
+    .header .navigation{
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.603);
+        width: 100%;
+        height: 100%;
+        z-index: 9999;
+        display: none;
+    }
+
+    .header .navigation .menu{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: white;
+        width: 50%;
+        height: 100%;
+        z-index: 99999;
+    }
+
+    .active-menu{
+        display: block !important;
+    }
+
+    .logo img{
+        width: 15% !important;
+        height: 15% !important;
+    }
+
+    .header .logo{
+        gap: .7rem;
+    }
+
+    .header .logo div h1{
+        font-size: .9rem;
+    }
+    
+    .header .logo div p{
+        font-size: .6rem;
+    }
+
+    .header .nav-icons .user-icon img{
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+    
+    .header .fav-icon, .cart-icon
+    {
+        position: relative;
+        font-size: 1rem;
+    }
+    
+    .header .badge{
+        width: .7rem;
+        height: .7rem;
+        font-size: .4rem;
+    }
+
+
+}
+

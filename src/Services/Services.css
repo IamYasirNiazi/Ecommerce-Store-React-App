@@ -1,0 +1,51 @@
+.services-wrapper div.services{
+    display: flex;
+    align-items: center;
+    gap: .6rem;
+    padding: 1.5rem 1rem;
+    justify-content: center;
+    border-radius: .2rem;
+    cursor: pointer;
+}
+
+.services-wrapper .services span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: lighter;
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: .1rem 0.5rem;
+    border-radius: 2.5rem;
+}
+
+.services-wrapper .services div{
+    display: flex;
+    flex-direction: column;
+    gap: .2rem;
+}
+
+.services-wrapper .services h2{
+    font-size: .9rem;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.services-wrapper .services p{
+    font-size: .72rem;
+    font-weight: 500;
+    color: #222;
+}
+
+@media only screen and (max-width: 768px){
+
+    .services-wrapper{
+        margin-bottom: -1rem;
+    }
+
+    .services-wrapper .services{
+        margin-bottom: 1rem;
+    }
+
+}

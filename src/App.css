@@ -54,3 +54,32 @@ a {
   text-decoration: none;
   color: unset;
 }
+
+a:hover {
+  color: unset;
+}
+
+section{
+  padding: 3rem 0;
+}
+
+.section-title{
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+::-webkit-scrollbar{
+  display: none;
+}
+
+@media only screen and (max-width: 768px){
+  section{
+    padding: 2rem 0 !important;
+  }
+  
+  .section-title{
+    font-size: 1.5rem;
+  }
+
+}
